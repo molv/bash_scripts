@@ -1,4 +1,8 @@
 #!/bin/bash
+##############################
+## https://github.com/molv ##
+##############################
+
 #simple check if service is running
 
 SERVICE=cups

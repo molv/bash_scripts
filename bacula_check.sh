@@ -1,4 +1,8 @@
 #!/bin/bash
+##############################
+## https://github.com/molv ##
+##############################
+
 LOG=/var/log/bacula_check.log
 #checking availability of bacula console
 /usr/sbin/bconsole <<< 'version' > /dev/null 2>&1
