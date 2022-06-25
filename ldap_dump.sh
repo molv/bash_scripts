@@ -17,5 +17,10 @@ gzip -9 $DUMP_PATH/ldap_`hostname`_`date +"%Y_%m_%d"`.ldif
 echo "`date +"%Y.%m.%d-%H:%M:%S"`: Rotating old dump files" >> $LOG
 find $DUMP_PATH -type f -mtime +30 -delete
 
+#clear log is more than 1 mb
+[[ $(find $LOG -type f -size +1M 2>/dev/null) ]] && echo  'Truncating LOG file' > $LOG
+unset LOG
+
+#cron
 #30 1 * * * /opt/ldap_dump.sh
 #/opt/ldap_dump.sh
