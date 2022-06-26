@@ -129,5 +129,3 @@ rm -rf $TMP_DIR
 
 echo  "Rotating archives in $DST older, than 14 days"
 find $DST -type f -mtime -name "backup_archive_*" +14 -delete
-
-#//
