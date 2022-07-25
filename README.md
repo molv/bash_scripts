@@ -2,7 +2,7 @@
 ____
 ## backup_filetype.sh ##
 
-** This script can create an compressed copy of one or more directories with filetype filter (if needed) and variable compression level. **
+**This script can create an compressed copy of one or more directories with filetype filter (if needed) and variable compression level.**
 
 ```
 Arguments:
@@ -28,10 +28,15 @@ Archives older than 14 days are automatically rotated (see last line of the scri
 ____
 ## bacula_check.sh ##
 
-** This script checks availability of bacula CLI and restarts services if CLI is not available. **
-Usage case: there was some connectivity problems with database, so bacula can not run backup jobs.
+**This script checks availability of bacula CLI and restarts services if CLI is not available.**
+Use case: from time to time you are experiencing some connectivity problems with database, so bacula can not run backup jobs.
 
 ____
 ## change_pass.sh ##
-** This script changes password for root (or any other) linux account for a list of machines. Just in case you need to periodically change passwords. **
+**This script changes password for root (or any other) linux account for a list of machines. Just in case you need to periodically change passwords.**
 Usage: ./change_pass.sh list_of_machines.txt
+
+____
+## chmod.sh
+**This script sets identical access right for a directory between two machines.**
+Use case: First machine is a reference and the second one has incorrect access rights to some directory caused by operator`s error**
