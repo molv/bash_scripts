@@ -22,21 +22,21 @@ Creates backup in '/backup_vol/destination/'. Directory '/tmp/source1' is a sour
 
 * Example 3: ./test.sh -d /backup_vol/destination/ -s "/tmp/source1" -c 2
 Creates backup in '/backup_vol/destination/'. Directory '/tmp/source1' is a source directory, saved all files, compression level 2 (1 is for fastest processing, 9 is for best compression)
-
+ <br />
 Archives older than 14 days are automatically rotated (see last line of the script).
 
 ____
 ## bacula_check.sh ##
 
-**This script checks availability of bacula CLI and restarts services if CLI is not available.**
+**This script checks availability of bacula CLI and restarts services if CLI is not available.**  <br />
 Use case: from time to time you are experiencing some connectivity problems with database, so bacula can not run backup jobs.
 
 ____
 ## change_pass.sh ##
-**This script changes password for root (or any other) linux account for a list of machines. Just in case you need to periodically change passwords.**
+**This script changes password for root (or any other) linux account for a list of machines. Just in case you need to periodically change passwords.** <br />
 Usage: ./change_pass.sh list_of_machines.txt
 
 ____
 ## chmod.sh
-**This script sets identical access right for a directory between two machines.**
+**This script sets identical access right for a directory between two machines.** <br />
 Use case: First machine is a reference and the second one has incorrect access rights to some directory caused by operator`s error**
