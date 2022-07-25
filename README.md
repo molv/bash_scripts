@@ -64,4 +64,12 @@ ____
 
 ____
 ## service_check.sh ##
-**Simple script for check service state and restart if needed. Just add it to the crontab.**
+**Simple script for check service state and restart it if needed. Just add it to the crontab.**
+
+____
+## virsh_check.sh ##
+**This script checks state of virtual machines managed by virt-manager and start them up if some of machines are not running. Made for national locale.**
+
+____
+## virsh_shutdown.sh ##
+**This script gets list of virtual machines managed by virt-manager and shuts them down.**
