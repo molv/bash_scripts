@@ -29,18 +29,22 @@ ____
 ## bacula_check.sh ##
 
 **This script checks availability of bacula CLI and restarts services if CLI is not available.**  <br />
+<br />
 Use case: from time to time you are experiencing some connectivity problems with database, so bacula can not run backup jobs.
 
 ____
 ## change_pass.sh ##
 **This script changes password for root (or any other) linux account for a list of machines. Just in case you need to periodically change passwords.** <br />
+<br />
 Usage: ./change_pass.sh list_of_machines.txt
 
 ____
 ## chmod.sh
 **This script sets identical access rights for a directory between two machines.** <br />
-Use case: First machine is used as a reference and the second one has incorrect access rights for some directory caused by operator`s error. <br />
-Usage:
+
+<br />Use case: First machine is used as a reference and the second one has incorrect access rights for some directory caused by operator`s error. <br />
+
+<br />Usage:
 ```
 Arguments:
 -h - help
@@ -49,3 +53,15 @@ Arguments:
 -f - file with reference access rights
 -t - target directory for grab reference access rights
 ```
+____
+## deploy_cron_script.sh ##
+**This script copies another script to a list of machines and adds a crontab job.**<br />
+<br />Usage: './script.sh servers_list.txt'
+
+____
+## ldap_dump.sh ##
+**This script makes a compressed copy of LDAP database by 'slapcat -l' and rotates old backups.**
+
+____
+## service_check.sh ##
+**Simple script for check service state and restart if needed. Just add it to the crontab.**
