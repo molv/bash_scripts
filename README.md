@@ -70,6 +70,9 @@ ____
 ## sshcopyid.sh ##
 **Simple script for send your public ssh key to the list of machines.**<br />
 <br />Usage: './deploy_cron_script.sh servers_list.txt'
+
+## nfs_check.sh ##
+**This script checks state of the NFS share by searching specified filetype, remounts it and restarts dependent service. All info should be specified by variables.**<br />
 ____
 ## virsh_check.sh ##
 **This script checks state of virtual machines managed by virt-manager and start them up if some of machines are not running. Made for national locale.**
