@@ -56,7 +56,7 @@ Arguments:
 ____
 ## deploy_cron_script.sh ##
 **This script copies another script to a list of machines and adds a crontab job.**<br />
-<br />Usage: './script.sh servers_list.txt'
+<br />Usage: './deploy_cron_script.sh servers_list.txt'
 
 ____
 ## ldap_dump.sh ##
@@ -64,8 +64,12 @@ ____
 
 ____
 ## service_check.sh ##
-**Simple script for check service state and restart it if needed. Just add it to the crontab.**
+**Simple scripscriptt for check service state and restart it if needed. Just add it to the crontab.**
 
+____
+## sshcopyid.sh ##
+**Simple script for send your public ssh key to the list of machines.**<br />
+<br />Usage: './deploy_cron_script.sh servers_list.txt'
 ____
 ## virsh_check.sh ##
 **This script checks state of virtual machines managed by virt-manager and start them up if some of machines are not running. Made for national locale.**
