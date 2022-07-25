@@ -38,5 +38,14 @@ Usage: ./change_pass.sh list_of_machines.txt
 
 ____
 ## chmod.sh
-**This script sets identical access right for a directory between two machines.** <br />
-Use case: First machine is a reference and the second one has incorrect access rights to some directory caused by operator`s error**
+**This script sets identical access rights for a directory between two machines.** <br />
+Use case: First machine is used as a reference and the second one has incorrect access rights for some directory caused by operator`s error. <br />
+Usage:
+```
+Arguments:
+-h - help
+-s - set access rights from file
+-g - get reference access rights
+-f - file with reference access rights
+-t - target directory for grab reference access rights
+```
